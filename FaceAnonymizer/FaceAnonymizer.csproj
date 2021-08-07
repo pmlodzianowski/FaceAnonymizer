@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\haarcascades\haarcascade_eye.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_eye_tree_eyeglasses.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_frontalcatface.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_frontalcatface_extended.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_frontalface_alt.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_frontalface_alt2.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_frontalface_alt_tree.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_frontalface_default.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_fullbody.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_lefteye_2splits.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_lowerbody.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_profileface.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_righteye_2splits.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_smile.xml" />
+    <None Remove="Resources\haarcascades\haarcascade_upperbody.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\haarcascades\haarcascade_eye.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_eye_tree_eyeglasses.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_frontalcatface.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_frontalcatface_extended.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_frontalface_alt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_frontalface_alt2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_frontalface_alt_tree.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_frontalface_default.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_fullbody.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_lefteye_2splits.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_lowerbody.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_profileface.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_righteye_2splits.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_smile.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\haarcascades\haarcascade_upperbody.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.5.3.4721" />
+    <PackageReference Include="Emgu.CV.Bitmap" Version="4.5.3.4721" />
+    <PackageReference Include="Emgu.CV.runtime.windows" Version="4.5.3.4721" />
+    <PackageReference Include="Emgu.CV.UI" Version="4.5.3.4721" />
+  </ItemGroup>
+
+</Project>
